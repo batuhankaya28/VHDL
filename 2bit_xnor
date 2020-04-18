@@ -1,0 +1,17 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity twobit_xnor is
+    Port (
+          B1 : in STD_LOGIC;
+          B2 : in STD_LOGIC;
+          Y1 : out STD_LOGIC); -
+   end twobit_xnor;
+
+architecture Behavioral of twobit_xnor is
+  begin
+    Y1 <= B1 xnor B2;
+end Behavioral;
+
+
+                
